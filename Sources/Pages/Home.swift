@@ -22,6 +22,7 @@ struct Home: StaticPage {
             
             }
             .id("ChangeToLight")
+            .class("d-none")
 
             Button("") {
                 SwitchTheme(themes.first(where: { $0.name.capitalized == "Automata Night"})!)
@@ -29,7 +30,6 @@ struct Home: StaticPage {
                 ShowElement("ChangeToLight")
             }
             .id("ChangeToDark")
-            .class("d-none")
         }
 
 
