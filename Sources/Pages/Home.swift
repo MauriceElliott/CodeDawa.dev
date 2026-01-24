@@ -3,33 +3,35 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-    @Environment(\.themes) private var themes
+
+    @Environment(\.themes)
+    private var themes
+
     var body: some HTML {
 
         Text("<br>")
-
-        Link("CodeDawa", target: "/")
-            .foregroundStyle(.white)
-            .font(.title1)
-
+        
         Text {
-             Button("󰽢") {
+            Link("CodeDawa", target: "/")
+                .foregroundStyle(.white)
+                .font(.title1)
+            Button("󰽢") {
                 SwitchTheme(themes.first(where: { $0.name.capitalized == "Automata Day"})!)
                 HideElement("ChangeToLight")
                 ShowElement("ChangeToDark")
             
             }
             .id("ChangeToLight")
-        }
 
-        Text {
-             Button("") {
+            Button("") {
                 SwitchTheme(themes.first(where: { $0.name.capitalized == "Automata Night"})!)
                 HideElement("ChangeToDark")
                 ShowElement("ChangeToLight")
             }
             .id("ChangeToDark")
-        }  
+            .class("d-none")
+        }
+
 
         Text("<br>")
 
@@ -43,22 +45,34 @@ struct Home: StaticPage {
             .margin(.bottom, 30)
             .class("float-end") 
 
-        Text("My name is Maurice, I am a software engineer, father, creative, and lover of all things sad and desperate. This website is not a professional place, just somewhere I feel comfortable exposing a little of my inner being to the wider internet, in the hopes that it makes others feel normal in their own skin. At the same time it is for me mostly, and if I feel better after posting here, it has done its job. Dawa is arabic for medicine, or cure. My implication with that is I found the cure to my addictions through code. Although saying that, it was definitely more my son being in the world that cured me. At least it keeps me sane.")
+        Text{
+        "My name is "    
+        Strong("Maurice")
+        ", I am a software engineer, "
+        Strong("father")
+        ", creative, and lover of all things sad and desperate. "
+        "<br>"
+        "This website is not a professional place, just somewhere I feel comfortable exposing a little of my inner being to the wider internet, in the hopes that it makes others feel normal in their own skin. At the same time it is for me mostly, and if I feel better after posting here, it has done its job."
+        "<br>"
+        "Dawa is arabic for medicine, or cure. My implication with that is I found the cure to my addictions through code. Although saying that, it was definitely more my son being in the world that cured me."
+        }
             .font(.body)
             .margin(.bottom, 100)
 
-        Link("Github", target: "https://github.com/MauriceElliott")
-            .foregroundStyle(.primary)
-            .font(.lead)
-            .margin(.top, 20)
-            .margin(.bottom, 10)
+        Section {
+            Link("Github", target: "https://github.com/MauriceElliott")
+                .foregroundStyle(.primary)
+                .font(.lead)
+                .margin(.top, 20)
+                .margin(.bottom, 10)
 
-        Text("<br>")
+            Text("<br>")
 
-        Link("Introduction", target: "/introduction")
-            .foregroundStyle(.primary)
-            .font(.lead)
-            .margin(.top, 20)
-            .margin(.bottom, 10)
+            Link("Introduction", target: "/introduction")
+                .foregroundStyle(.primary)
+                .font(.lead)
+                .margin(.top, 20)
+                .margin(.bottom, 10)
+        }
     }
 }
