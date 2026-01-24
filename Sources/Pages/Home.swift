@@ -15,21 +15,32 @@ struct Home: StaticPage {
             Link("CodeDawa", target: "/")
                 .foregroundStyle(.white)
                 .font(.title1)
-            Button("󰽢") {
+            Button("light") {
                 SwitchTheme(themes.first(where: { $0.name.capitalized == "Automata Day"})!)
                 HideElement("ChangeToLight")
+                HideElement("ChangeToLightImg")
                 ShowElement("ChangeToDark")
+                ShowElement("ChangeToDarkImg")
             
             }
             .id("ChangeToLight")
             .class("d-none")
 
-            Button("") {
+            Image("/images/dark_theme.png")
+            .id("ChangeToLightImg")
+            .class("d-none")
+
+            Button("dark") {
                 SwitchTheme(themes.first(where: { $0.name.capitalized == "Automata Night"})!)
                 HideElement("ChangeToDark")
+                HideElement("ChangeToDarkImg")
                 ShowElement("ChangeToLight")
+                ShowElement("ChangeToLightImg")
             }
             .id("ChangeToDark")
+
+            Image("/images/light_theme.png")
+            .id("ChangeToDarkImg")
         }
 
 
