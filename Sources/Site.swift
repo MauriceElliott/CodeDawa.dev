@@ -20,9 +20,9 @@ struct Codedawa: Site {
     var url = URL(static: "https://codedawa.dev")
     var builtInIconsEnabled = true
 
-    var theme: (any Theme)? = AutomataNight()
     var lightTheme: (any Theme)? = AutomataDay()
     var darkTheme: (any Theme)? = AutomataNight()
+    var theme: (any Theme)? = AutomataNight()
     var author = "Maurice Elliott"
     var favicon: URL? { URL(static: "/favicon/logo.png") }
 
