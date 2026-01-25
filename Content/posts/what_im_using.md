@@ -17,14 +17,14 @@ Not only did it give me a project to work on, it also gave me a computer worthy 
 
 There is no longer much change to the software but I still find it to be the computer I most enjoy using. Switching to primarily using Linux over the last year was a lot more straight forward than I first imagined and now I am invested in the ecosystem and philosophy I can't see myself ever returning to proprietary operating systems by choice. I still have a MacBook Pro 2019 as a fallback which I mostly use for non-programming related use, or just chilling in bed but having that backup means I don't think I'll be upgrading any time soon.
 
-![My Mac Pro](../images/macpro.jpg)
+![My Mac Pro](/images/macpro.jpg)
 
 ##### Sofle v2 split keyboard with choc switches
 With all my computers, including my work laptop I'm using a custom made Sofle 59-key from KeyboardHoarders in the US. It has low profile brown choc switches, with some white keycaps I bought from Aliexpress. It's my second Sofle keyboard, and since buying it around two thirds of the way through the year I've not considered any alternative. It's mostly to help with dodgy finger joints and wrist pain but it's also just been a pretty great typing experience.
 
 My typing speed is generally horrendous but it's not something I've ever worried about, and with the Sofle especially it's 100% more about do my hands hurt more or less after a day's work, in which case it's doing the job nicely.
 
-![My Sofle keyboard](../images/sofle.jpg)
+![My Sofle keyboard](/images/sofle.jpg)
 
 #### Software
 
