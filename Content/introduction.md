@@ -1,8 +1,9 @@
 ---
-title: "I have no mouth, yet I must scream."
+title: I have no mouth, yet I must scream.
 date: 2025-12-07 23:53
 categories: Introduction
 ---
+Evening,
 
 This is a personal blog I've created to document the part of me I feel comfortable making public. Saying that, I am not opposed to the idea of feeling vulnerable. I am a sensitive person, and sometimes that's okay and acceptable if it provides others with the space to feel normal in their skin.
 

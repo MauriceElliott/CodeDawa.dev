@@ -3,7 +3,8 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-
+    @Environment(\.articles)
+    var articles
     var body: some HTML {
 
         Image("/images/home_art.png", description: "pixel art of a computer, a keyboard, and a large cup of tea.")
@@ -42,11 +43,21 @@ struct Home: StaticPage {
                 .margin(.top, 20)
                 .margin(.bottom, 10)
             Text("")
-            Link("Introduction", target: "/introduction")
-                .foregroundStyle(.primary)
-                .font(.body)
-                .margin(.top, 20)
-                .margin(.bottom, 10)
+        }
+
+        Section {
+            Text(Strong("Musings: "))
+                ForEach(articles.all) { article in
+                    Text {
+                        Strong(String(article.date.formatted(date: .abbreviated, time: .omitted)))
+                        " - "
+                        Link(article.title, target: article)
+                        .foregroundStyle(.primary)
+                        .font(.body)
+                        .margin(.top, 20)
+                        .margin(.bottom, 10)
+                    }
+                }
         }
     }
 }
