@@ -28,19 +28,15 @@ extension BaseTheme {
 
 struct AutomataNight: BaseTheme {
 	var name = "AutomataNight"
-	// var font: Font = Font(
- //        name: "Departure Mono",
- //        source: "./../fonts/DepartureMono-Regular.woff2"
- //    )
-
 	var font: Font = Font(
-        name: "Matisse Pro EB",
-        source: "./../fonts/'FOT-Matisse Pro EB.otf'"
+        name: "Departure Mono",
+        source: "./../fonts/DepartureMono-Regular.woff2"
     )
 
     var headingFont: Font = Font(
-        name: "Matisse Pro EB",
-        source: "./../fonts/'FOT-Matisse Pro EB.otf'"
+        name: "Departure Mono",
+        source: "./../fonts/DepartureMono-Regular.woff2"
+
     )
 
     var monospaceFont: Font = Font(
