@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="I love these posts, stumbling onto someone I admire’s personal blog and finding a list of the tech they use is nice. It pointlessly interests me. It’s useless guff that might make me feel a way or might make me feel nothing, but there’s a joy in just the basics of seeing through someone else’s experience via the way they choose to work." />
+    <meta name="author" content="Maurice Elliott" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>My "tech" stack – Code Dawa</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://codedawa.dev/posts/what_im_using" rel="canonical" />
+    <link href="/favicon/logo.png" rel="icon" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Codedawa" />
+    <meta property="og:title" content="My " tech" stack" />
+    <meta name="twitter:title" content="My " tech" stack" />
+    <meta property="og:description" content="I love these posts, stumbling onto someone I admire’s personal blog and finding a list of the tech they use is nice. It pointlessly interests me. It’s useless guff that might make me feel a way or might make me feel nothing, but there’s a joy in just the basics of seeing through someone else’s experience via the way they choose to work." />
+    <meta name="twitter:description" content="I love these posts, stumbling onto someone I admire’s personal blog and finding a list of the tech they use is nice. It pointlessly interests me. It’s useless guff that might make me feel a way or might make me feel nothing, but there’s a joy in just the basics of seeing through someone else’s experience via the way they choose to work." />
+    <meta property="og:url" content="https://codedawa.dev/posts/what_im_using" />
+    <meta name="twitter:domain" content="codedawa.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <p><br /></p>
+    <p><a href="/" class="fs-1" style="color: rgb(255 255 255 / 100%)">CodeDawa</a><button type="button" id="ChangeToLight" class="btn" onclick="igniteSwitchTheme('automata-day-light');; document.getElementById('ChangeToLight').classList.add('d-none'); document.getElementById('ChangeToDark').classList.remove('d-none')">light</button><button type="button" id="ChangeToDark" class="d-none btn" onclick="igniteSwitchTheme('automata-night-dark');; document.getElementById('ChangeToDark').classList.add('d-none'); document.getElementById('ChangeToLight').classList.remove('d-none')">dark</button></p>
+    <p><br /></p>
+    <p class="text-primary" style="margin-bottom: 30px">Code is code, Dawa is the cure.</p>
+    <div class="ig-main-content">
+      <h1>My "tech" stack</h1>
+      <p class="text-body-secondary lead">25 January 2026</p>
+      <p style="margin-top: 20px"></p>
+      <p>I love these posts, stumbling onto someone I admire’s personal blog and finding a list of the tech they use is nice. It pointlessly interests me. It’s useless guff that might make me feel a way or might make me feel nothing, but there’s a joy in just the basics of seeing through someone else’s experience via the way they choose to work.</p>
+      <p>Most recently it was Louis Pilfold, the creator of Gleam, and to read the last time he wrote one in December 2024 he was still using an old 2020 MacBook Air with 16GB of RAM made me feel a little less bad about my computer habits.</p>
+      <p>Over the last year I’ve come to the realisation that not only am I fine with not having the latest and dealing with a bit of jank, I also don’t plan on ever buying new computers again. In the same way that my brother likes buying old beat up cars that only just work and putting enough work into them to make them sing, I want to be the type of person that does the same with computers.</p>
+      <h5>2013 Trash Can Mac Pro</h5>
+      <p>So earlier this year I acquired a <strong>2013 Mac Pro</strong>, it has 32GB of RAM, an old Xeon chip, 3.7GHz quad core, and some custom made (as in for the computer, not for me) AMD D300 graphics cards. That’s right, dual graphics cards, still waiting on that little feature becoming useful. I bought it for 130 GBP, which is a pretty sad depreciation in value considering how much these used to cost. The thing has been worth every penny and more.</p>
+      <p>Not only did it give me a project to work on, it also gave me a computer worthy of Linux. The difficulty in getting the right setup to get the wifi, graphics cards, fans, peripherals all working correctly took a gargantuan amount of effort, but was so incredibly satisfying when I finally settled on my final pick. Gentoo runs beautifully on it. Having an operating system specced for my specific hardware and being able to customise to the nth degree is hugely gratifying.</p>
+      <p>There is no longer much change to the software but I still find it to be the computer I most enjoy using. Switching to primarily using Linux over the last year was a lot more straight forward than I first imagined and now I am invested in the ecosystem and philosophy I can’t see myself ever returning to proprietary operating systems by choice. I still have a MacBook Pro 2019 as a fallback which I mostly use for non-programming related use, or just chilling in bed but having that backup means I don’t think I’ll be upgrading any time soon.</p>
+      <p><img src="/images/macpro.jpg" alt="My Mac Pro" class="img-fluid" /></p>
+      <h5>Sofle v2 split keyboard with choc switches</h5>
+      <p>With all my computers, including my work laptop I’m using a custom made Sofle 59-key from KeyboardHoarders in the US. It has low profile brown choc switches, with some white keycaps I bought from Aliexpress. It’s my second Sofle keyboard, and since buying it around two thirds of the way through the year I’ve not considered any alternative. It’s mostly to help with dodgy finger joints and wrist pain but it’s also just been a pretty great typing experience.</p>
+      <p>My typing speed is generally horrendous but it’s not something I’ve ever worried about, and with the Sofle especially it’s 100% more about do my hands hurt more or less after a day’s work, in which case it’s doing the job nicely.</p>
+      <p><img src="/images/sofle.jpg" alt="My Sofle keyboard" class="img-fluid" /></p>
+      <h4>Software</h4>
+      <p>Most of the software I use these days is made pretty obvious by the configuration repos I choose to scatter all over my GitHub. Unlike most who keep a dotfiles repo, I like to individually make a repo for each tool I’m using. As such you can find things like my Sway configuration on GitHub. My fuzzel configuration as well. I wouldn’t really consider these to be pieces of software I use though. They exist, and they do a specific job well enough but they are nothing to write home about.</p>
+      <h5>Helix modal text editor</h5>
+      <p>The main thing that I started using this year that has changed my workflow most, is Helix, a modal text editor written in Rust, with a minimal configuration, and a very interesting core set of functionality. Due to its current lack of plugin system as well as it being very much a batteries included editor it has made me more productive than any editor before it. This is not through incredible shortcuts, snazzy UI, or the latest features in modal text editing. It’s literally just the lack of customisation and sane defaults. I don’t agonise over things I cannot change, and for the most part every aspect of it is smart and well thought out.</p>
+      <p>That being said I did end up creating two custom themes for it which can be found pinned on my GitHub profile named Ghostty-Automata.</p>
+      <h5>Ghostty &amp; Wezterm</h5>
+      <p>I don’t think I need to say much about Ghostty, not only is it my terminal of choice, it’s also my community of choice, the Discord server is one of the few places on the internet I feel I am among friends. Uzair specifically is responsible for that but even before we became close it was already an interesting fun place to be and to chat. The terminal emulator though is a sight to behold. It is powerful, beautiful, well designed, fast as hell, and a general all round powerhouse of a terminal emulator. However it is not yet available on Windows, so for my work, I use Wezterm, another thoroughly competent, well designed terminal emulator with only a tiny bit more to be desired in terms of the command palette and supported image protocols.</p>
+      <h5>Year of the fish</h5>
+      <p>Fish shell has become my favourite shell environment, I probably don’t use the features as deeply as I should, but from a scripting language and customisation standpoint it ticks all the boxes, and over the last year I’ve been building a curated list of useful commands that come with me where ever I go, no matter the platform.</p>
+      <h5>Gentoo</h5>
+      <p>I mentioned it before in my mac pro gush, but I need to mention it again, as its a fascinating concept and something I have wanted to attempt for years. Gentoo is the ultimate linux distribution, for one simple reason, the package manager. I mean, this is often the selling point of Linux distributions, you pick somewhat based on the init system, somewhat on the installation process, and somewhat on the maintainence of the project. Lots of people turn to Arch or Nix for their repositories and Nix specifically for its declarative system. People turn to Debian and Ubuntu due to their stability. I think we all have our reasons for where we land but my reason for landing on Gentoo in my mind is fundamentally good for any use case.</p>
+      <p>Gentoo is a compiled OS, you compile the kernel if you wish, but not only that, you compile all the software, you also specify your uses, what your processor architecture is, what features it supports, what graphics drivers your machine supports, what you generally use your software for and much much more. By doing so you strip away the chaff from the software you use. You can guarantee that not only is the software you use compiled specifically for your computer and setup, but it will also be more lightweight due to not needing all the portability guff that is included in the binaries of most software.</p>
+      <p>Not only has this meant I can squeeze the most out of the old ass mac pro, but it also means you could also be leveraging the hardware you have to the absolute max of its capabilities. I’m definitely not saying Gentoo is the right choice for everyone but for me the benefits it brings outweigh the cost of setup up and maintaining packages.</p>
+      <p>That concludes my 2025 roundup (Extemely late), hope you’ve enjoyed and look forward to doing the next one.</p>
+      <p></p>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>

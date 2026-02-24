@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Evening," />
+    <meta name="author" content="Maurice Elliott" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>I have no mouth, yet I must scream. – Code Dawa</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://codedawa.dev/introduction" rel="canonical" />
+    <link href="/favicon/logo.png" rel="icon" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Codedawa" />
+    <meta property="og:title" content="I have no mouth, yet I must scream." />
+    <meta name="twitter:title" content="I have no mouth, yet I must scream." />
+    <meta property="og:description" content="Evening," />
+    <meta name="twitter:description" content="Evening," />
+    <meta property="og:url" content="https://codedawa.dev/introduction" />
+    <meta name="twitter:domain" content="codedawa.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <p><br /></p>
+    <p><a href="/" class="fs-1" style="color: rgb(255 255 255 / 100%)">CodeDawa</a><button type="button" id="ChangeToLight" class="btn" onclick="igniteSwitchTheme('automata-day-light');; document.getElementById('ChangeToLight').classList.add('d-none'); document.getElementById('ChangeToDark').classList.remove('d-none')">light</button><button type="button" id="ChangeToDark" class="d-none btn" onclick="igniteSwitchTheme('automata-night-dark');; document.getElementById('ChangeToDark').classList.add('d-none'); document.getElementById('ChangeToLight').classList.remove('d-none')">dark</button></p>
+    <p><br /></p>
+    <p class="text-primary" style="margin-bottom: 30px">Code is code, Dawa is the cure.</p>
+    <div class="ig-main-content">
+      <h1>I have no mouth, yet I must scream.</h1>
+      <p class="text-body-secondary lead">7 December 2025</p>
+      <p style="margin-top: 20px"></p>
+      <p>Evening,</p>
+      <p>This is a personal blog I’ve created to document the part of me I feel comfortable making public. Saying that, I am not opposed to the idea of feeling vulnerable. I am a sensitive person, and sometimes that’s okay and acceptable if it provides others with the space to feel normal in their skin.</p>
+      <p>My name is Maurice, pronounced Morris. My mother is Syrian, my father is Irish. I am English born. Irish through citizenship. Syrian in temperament.</p>
+      <p>I am a father of two incredible children, Azriel my son is 4, Alaia my daughter is almost 2. I am also a husband to a wonderful wife.</p>
+      <p>I am a Software Engineer by trade, and a Software tinker by night….</p>
+      <p>I love programming. I’m not a huge fan of tech. tech minimalist is how I like to think of myself.</p>
+      <p>The beauty of creating art, systems and tools through words alone has always inspired me. The beauty of great design and intelligent decisions are what draw me to this field, and what keep my passion for programming burning bright. But tech in the sense of the industry, and the gaping ravenous money making snake oil selling pit of dispair that comes with it is not to my taste. I wish we could be more responsible for our impact on the world. More caring of the needs of the many, rather than just the people on top. Less obsessed with the next big client, or next big advancement, and more invested in just making good, robust, interesting and extensible software.</p>
+      <p>The name Codedawa comes from Dawa, which is an arabic word for medicine, but can also mean drug. I am an ex addict, I have a way of taking anything I enjoy and making it a problem, so I see code as the final bastion of this habbit. The fact that coding every night can still be healthy as long as it isn’t getting in the way of my family life makes it the perfect medicine for me. I am grateful for it. It feeds my family, puts clothes on our back and also happens to be a huge source of my own personal enjoyment. I am grateful to have found my way back to it.</p>
+      <p>Anyways, on a lighter note, I am becoming more positive as a person, which seems odd considering the above, but it is the honest truth and a massive improvement. I love more than just programming and will surely discuss some of that as time goes on. We will see. stay tuned.</p>
+      <p></p>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>
