@@ -1,0 +1,43 @@
+{{define "home"}}
+{{template "head" .}}
+{{template "header" .}}
+
+<main>
+  <img
+    src="/images/home_art.png"
+    alt="pixel art of a computer, a keyboard, and a large cup of tea."
+    class="home-art"
+    width="250"
+  >
+
+  <p>
+    My name is <strong>Maurice</strong>, I am a <strong>software engineer</strong>,
+    <strong>father</strong>, <strong>creative</strong>, and lover of all things sad and
+    desperate.<br>
+    This website is not a professional place, just somewhere I feel comfortable exposing
+    a little of my inner being to the wider internet, in the hopes that it makes others
+    feel normal in their own skin. At the same time it is for me mostly, and if I feel
+    better after posting here, it has done its job.<br>
+    <strong>Dawa</strong> is arabic for medicine, or <strong>cure</strong>. My implication
+    with that is I found the cure to my addictions through code. Although saying that, it
+    was definitely more my son being in the world that cured me.
+  </p>
+
+  <section class="links">
+    <p><strong>Links:</strong></p>
+    <a href="https://github.com/MauriceElliott">Github</a>
+  </section>
+
+  <section class="musings">
+    <p><strong>Musings:</strong></p>
+    {{range .Articles}}
+    <p>
+      <strong>{{.DateFormatted}}</strong> –
+      <a href="{{.URL}}">{{.Title}}</a>
+    </p>
+    {{end}}
+  </section>
+</main>
+
+{{template "footer" .}}
+{{end}}

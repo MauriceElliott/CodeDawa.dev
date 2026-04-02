@@ -15,24 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Swift
-        run: |
-          wget https://download.swift.org/swift-5.9.2-release/ubuntu2204/swift-5.9.2-RELEASE/swift-5.9.2-RELEASE-ubuntu22.04.tar.gz
-          tar xzf swift-5.9.2-RELEASE-ubuntu22.04.tar.gz
-          sudo mv swift-5.9.2-RELEASE-ubuntu22.04 /usr/share/swift
-          echo "/usr/share/swift/usr/bin" >> $GITHUB_PATH
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
 
-      - name: Clone and Install Ignite
-        run: |
-          git clone https://github.com/twostraws/Ignite ignite-repo
-          cd ignite-repo
-          make build
-          mkdir -p $GITHUB_WORKSPACE/ignite-install
-          make install PREFIX_DIR=$GITHUB_WORKSPACE/ignite-install
-          echo "$GITHUB_WORKSPACE/ignite-install" >> $GITHUB_PATH
-
-      - name: Build Site with Ignite
-        run: ignite build
+      - name: Build Site
+        run: go run .
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

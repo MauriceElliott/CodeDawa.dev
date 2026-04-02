@@ -1,0 +1,20 @@
+{{define "blog"}}
+{{template "head" .}}
+{{template "header" .}}
+
+<main>
+  <h1>All Posts</h1>
+  <p class="date">Archive of all musings and articles.</p>
+
+  <ul class="post-list">
+    {{range .Articles}}
+    <li>
+      <a href="{{.URL}}">{{.Title}}</a>
+      <span class="date">{{.DateFormatted}}</span>
+    </li>
+    {{end}}
+  </ul>
+</main>
+
+{{template "footer" .}}
+{{end}}

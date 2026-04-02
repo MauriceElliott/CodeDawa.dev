@@ -1,0 +1,26 @@
+{{define "head"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maurice Elliott">
+  <title>{{if .PageTitle}}{{.PageTitle}} – Code Dawa{{else}}Code Dawa{{end}}</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon/logo.png">
+  <link rel="alternate" type="application/rss+xml" title="Codedawa" href="/feed.rss">
+</head>
+<body>
+{{end}}
+
+{{define "header"}}
+<header>
+  <a href="/" class="site-title">CodeDawa</a>
+  <p class="tagline">Code is code, Dawa is the cure.</p>
+</header>
+{{end}}
+
+{{define "footer"}}
+</body>
+</html>
+{{end}}

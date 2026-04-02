@@ -1,0 +1,23 @@
+{{define "article"}}
+{{template "head" .}}
+{{template "header" .}}
+
+<main class="article">
+  <h1>{{.Article.Title}}</h1>
+  <p class="date">{{.Article.DateLong}}</p>
+
+  {{if .Article.Image}}
+  <img src="{{.Article.Image}}" alt="" class="featured-image">
+  {{end}}
+
+  {{if .Article.Tags}}
+  <p class="tags">Tagged with: {{.Article.TagsStr}}</p>
+  {{end}}
+
+  <div class="article-body">
+    {{.Article.Body}}
+  </div>
+</main>
+
+{{template "footer" .}}
+{{end}}
