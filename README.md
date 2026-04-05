@@ -1,31 +1,29 @@
 # Codedawa
 
-Source for [codedawa.dev](https://codedawa.dev), a personal blog built with a custom Go static site generator.
+Source for [codedawa.dev](https://codedawa.dev), a personal blog built with a custom Odin static site generator.
 
 ## Building
 
+Requires: [Odin](https://odin-lang.org/) and `libcmark-dev` (or via Homebrew: `brew install cmark`)
+
+Build the site:
+
 ```bash
-go run .
+odin build src -out:codedawa
+./codedawa
 ```
 
-To preview locally:
+To build and serve locally (auto-detects first open port starting at 8000):
 
 ```bash
-go run . -serve
-# site available at http://localhost:8080
-```
-
-To compile a binary:
-
-```bash
-go build -o codedawa && ./codedawa
+./build.sh
 ```
 
 ## Structure
 
 - **Assets/**: Static assets (images, fonts, CSS)
 - **Content/**: Markdown blog posts with YAML front matter
-- **templates/**: Go HTML templates
+- **src/**: Odin source code
 - **Build/**: Generated HTML (output, deploy this directory)
 
 ## Adding a post
