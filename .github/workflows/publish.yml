@@ -15,12 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-go@v5
+      - uses: laytan/setup-odin@v2
         with:
-          go-version-file: go.mod
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install cmark
+        run: sudo apt-get update && sudo apt-get install -y libcmark-dev
 
       - name: Build Site
-        run: go run .
+        run: |
+          odin build src -out:codedawa
+          ./codedawa
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
