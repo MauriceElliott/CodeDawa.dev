@@ -1,38 +1,47 @@
 package codedawa
 
-import "core:strings"
 import "core:fmt"
+import "core:strings"
 
 // Render the <head>, opening <body>, and <header> section
 render_head :: proc(b: ^strings.Builder, page_title: string) {
-	strings.write_string(b, `<!DOCTYPE html>
+	strings.write_string(
+		b,
+		`<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Maurice Elliott">
-  <title>`)
+  <title>`,
+	)
 	if len(page_title) > 0 {
 		xml_escape(b, page_title)
 		strings.write_string(b, " – Code Dawa")
 	} else {
 		strings.write_string(b, "Code Dawa")
 	}
-	strings.write_string(b, `</title>
+	strings.write_string(
+		b,
+		`</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/favicon/logo.png">
   <link rel="alternate" type="application/rss+xml" title="Codedawa" href="/feed.rss">
 </head>
 <body>
-`)
+`,
+	)
 }
 
 render_header :: proc(b: ^strings.Builder) {
-	strings.write_string(b, `<header>
+	strings.write_string(
+		b,
+		`<header>
   <a href="/" class="site-title">CodeDawa</a>
   <p class="tagline">Code is code, Dawa is the cure.</p>
 </header>
-`)
+`,
+	)
 }
 
 render_footer :: proc(b: ^strings.Builder) {
@@ -46,7 +55,9 @@ render_home :: proc(articles: []Article) -> string {
 	render_head(&b, "")
 	render_header(&b)
 
-	strings.write_string(&b, `
+	strings.write_string(
+		&b,
+		`
 <main>
   <img
     src="/images/home_art-export.png"
@@ -74,13 +85,19 @@ render_home :: proc(articles: []Article) -> string {
   </section>
 
   <section class="musings">
-    <p><strong>Musings:</strong></p>
-`)
+    <p><strong>Posts:</strong></p>
+`,
+	)
 
 	for &a in articles {
 		df := date_formatted(a.date)
 		defer delete(df)
-		fmt.sbprintf(&b, "    <p>\n      <strong>%s</strong> –\n      <a href=\"%s\">", df, a.url)
+		fmt.sbprintf(
+			&b,
+			"    <p>\n      <strong>%s</strong> –\n      <a href=\"%s\">",
+			df,
+			a.url,
+		)
 		xml_escape(&b, a.title)
 		strings.write_string(&b, "</a>\n    </p>\n")
 	}
@@ -98,13 +115,16 @@ render_blog :: proc(articles: []Article) -> string {
 	render_head(&b, "All Posts")
 	render_header(&b)
 
-	strings.write_string(&b, `
+	strings.write_string(
+		&b,
+		`
 <main>
   <h1>All Posts</h1>
   <p class="date">Archive of all musings and articles.</p>
 
   <ul class="post-list">
-`)
+`,
+	)
 
 	for &a in articles {
 		df := date_formatted(a.date)
@@ -166,12 +186,19 @@ render_article :: proc(a: ^Article) -> string {
 xml_escape :: proc(b: ^strings.Builder, s: string) {
 	for ch in s {
 		switch ch {
-		case '&':  strings.write_string(b, "&amp;")
-		case '<':  strings.write_string(b, "&lt;")
-		case '>':  strings.write_string(b, "&gt;")
-		case '"':  strings.write_string(b, "&quot;")
-		case '\'': strings.write_string(b, "&#39;")
-		case:      strings.write_rune(b, ch)
+		case '&':
+			strings.write_string(b, "&amp;")
+		case '<':
+			strings.write_string(b, "&lt;")
+		case '>':
+			strings.write_string(b, "&gt;")
+		case '"':
+			strings.write_string(b, "&quot;")
+		case '\'':
+			strings.write_string(b, "&#39;")
+		case:
+			strings.write_rune(b, ch)
 		}
 	}
 }
+

@@ -1,0 +1,30 @@
+---
+title: The balance of abstraction, support and comfort
+date: 2026-04-06 00:05
+categories: favourite_tech
+---
+
+## The balance of abstraction, comfort and support
+
+I'll try and be short with this one as it's something that has taken up more of my time than I can ever have imagined when starting down this journey. For the longest time I have been obsessed with the idea of a forever language. Something that no matter the circumstance I could choose for every task and be happy in that decision. I have tried lots of things to fill this gap but then always manage to find a reason that the language didn't quite suit. Don't want to name too many names, as I think these things are highly subjective and my opinion having only used the languages for small periods makes me less qualified to comment on them. However, I will talk about the ones I gave proper time.
+
+### Zig
+I wanted it to be this so badly; Zig feels like you can literally build anything in it. It has everything you could ever want or need while still feeling like it's highly focused in the tools it provides. I used it for a few months but just really struggled with it. I was new to manual memory management having never studied computer science, but object pooling and arena allocators accomplished what I needed well enough. I just found that it asked too much of me, far more than I was willing to give and the control it provided was immense, but the way the compiler went about coaching me to get there just didn't feel like something I had time for. I can see why people love it, and understand the draw but don't see myself ever going back.
+
+### Swift
+Swift had my attention, and my dedication for far longer than it deserved. It is a delightfully designed language that feels very much like an Apple product. It also feels like C# in a lot of ways which felt comfortable to me as an ex C# developer. However, I found it was a little too similar for my current taste. Like C#, the steering committee seems to want to implement every possible feature into the language, no matter the divergence in ethos. It also works everywhere, from scripting, to ML, to web servers, to app development, to actual bare metal development. Very cool features, and it's both what drew me to it and also pushed me away. There's just no cohesion to the design, people come and go from the steering committee pulling it in all different directions yet never removing dead implementations from the code in the name of backwards compatibility. It's also dead slow unless you use unsafe code. The toolchain is what killed it for me; Linux support is second class and I was constantly fixing the toolchain for various reasons even on my macOS computer. Swift is a delightful flawed language, some extremely cool features and design held back by poor direction, awful compile times and less than adequate performance.
+
+### The Rest of the castaways
+There are a few others that are worth mentioning that didn't make the cut. Rust is obviously a significant one. Lamest of all, I didn't like the vibe, I didn't like the syntax, I liked the compiler but didn't like the compilation speeds. Rust is a great language, just isn't for me. Another one I gave some serious thought and attention is Nim. Nim is something special. I don't know who develops it or why they do what they do, but somehow it does what it does. Nim has multiple backends, allowing for GC, ARC, full memory management, and other forms of memory management. It also has deceptively script-like syntax, being a Python-derived language rather than C. However, similarly to Swift, it doesn't know what it wants to be or what role to fall into. I'll just list the rest that I considered but didn't make it: OCaml, Elixir, Nelua, Mojo, Roc, Hare, C, Gleam, Go.
+
+### Odin
+This is where I've landed; I have already used Odin for the initial implementation of an OS kernel I was working on, have reimplemented my shell in it, and have started working on a game using it. I'll start with why I am drawn to it. Simplicity. Odin is a dead simple language, it does not endeavour to solve the problems for you. To put it simply, I would describe it as Lua for systems programming.
+It gives you some key concepts, and then lets you run wild with them. It doesn't attempt to be clever or to treat you like it knows best. It sets out to simply solve some small C-related issues, provide some modernities like slices and the defer keyword as well as custom allocators, and simply provide the joy of programming in its form and function.
+The reason I'm sticking is because Odin has the performance; it doesn't leave enough on the table that I would ever need to look elsewhere for competent systems languages. It's also easy enough to use and understand that I don't feel the need to pore over the docs trying to find the right feature or data structure for my use case. I can just programme and know that I am doing the right thing. It leaves the implementation up to me. I am by no means the best programmer, but something I loved about my experiences using Lua to build things is that I have to write and implement everything myself, nothing is prepared for me. That not only gives me a reason to improve as a programmer, it also provides flow, and keeps me in the code. I don't need to seek external thought to solve my problems.
+So for that reason I am done. Odin is simple in design, clear in its core philosophy, and designed for people who like writing systems, which makes me personally feel very at home.
+
+### Honourable mention
+Lua; I doubt I need to say it but Lua made me love programming for myself again. It is a simple scripting language with a lot of power and a lot to love. It is the gold standard for scripting language design, and I will likely return to it whenever a scripting language is required for the task. We are blessed by its creation.
+
+### Fin
+My multi-year mental health crisis has come to a close; the forever language might be real...for now. I have found what I needed and can now just get on with building some peak software.
