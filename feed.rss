@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Codedawa</title>
+    <link>https://codedawa.dev</link>
+    <description>Code is code, Dawa is the cure.</description>
+    <item>
+      <title>The balance of abstraction, support and comfort</title>
+      <link>https://codedawa.dev/posts/programming_language_psychosis/</link>
+      <pubDate>Mon, 06 Apr 2026 00:05:00 +0000</pubDate>
+      <author>Maurice Elliott</author>
+      <guid>https://codedawa.dev/posts/programming_language_psychosis/</guid>
+    </item>
+    <item>
+      <title>My &quot;tech&quot; stack</title>
+      <link>https://codedawa.dev/posts/what_im_using/</link>
+      <pubDate>Sun, 25 Jan 2026 20:13:00 +0000</pubDate>
+      <author>Maurice Elliott</author>
+      <guid>https://codedawa.dev/posts/what_im_using/</guid>
+    </item>
+    <item>
+      <title>I have no mouth, yet I must scream.</title>
+      <link>https://codedawa.dev/introduction/</link>
+      <pubDate>Sun, 07 Dec 2025 23:53:00 +0000</pubDate>
+      <author>Maurice Elliott</author>
+      <guid>https://codedawa.dev/introduction/</guid>
+    </item>
+  </channel>
+</rss>
