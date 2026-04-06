@@ -4,8 +4,6 @@ date: 2026-04-06 00:05
 categories: favourite_tech
 ---
 
-## The balance of abstraction, comfort and support
-
 I'll try and be short with this one as it's something that has taken up more of my time than I can ever have imagined when starting down this journey. For the longest time I have been obsessed with the idea of a forever language. Something that no matter the circumstance I could choose for every task and be happy in that decision. I have tried lots of things to fill this gap but then always manage to find a reason that the language didn't quite suit. Don't want to name too many names, as I think these things are highly subjective and my opinion having only used the languages for small periods makes me less qualified to comment on them. However, I will talk about the ones I gave proper time.
 
 ### Zig
