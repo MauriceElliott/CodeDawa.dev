@@ -1,14 +1,13 @@
 package codedawa
 
 import "core:os"
-import "core:strings"
 import "core:path/filepath"
+import "core:strings"
 
 make_dir_recursive :: proc(path: string) -> bool {
 	if os.is_dir(path) do return true
 
 	parent := filepath.dir(path)
-	defer delete(parent)
 	if parent != path && parent != "." && parent != "" {
 		if !make_dir_recursive(parent) do return false
 	}
@@ -24,7 +23,6 @@ remove_dir_recursive :: proc(path: string) -> bool {
 
 copy_file :: proc(src, dst: string) -> bool {
 	parent := filepath.dir(dst)
-	defer delete(parent)
 	if !make_dir_recursive(parent) do return false
 
 	data, read_err := os.read_entire_file_from_path(src, context.allocator)
@@ -46,9 +44,9 @@ copy_dir :: proc(src, dst: string) -> bool {
 
 	for entry in entries {
 		src_path := strings.concatenate({src, "/", entry.name})
-		defer delete(src_path)
+		// defer delete(src_path)
 		dst_path := strings.concatenate({dst, "/", entry.name})
-		defer delete(dst_path)
+		// defer delete(dst_path)
 
 		if entry.type == .Directory {
 			if !make_dir_recursive(dst_path) do return false
@@ -59,3 +57,4 @@ copy_dir :: proc(src, dst: string) -> bool {
 	}
 	return true
 }
+
