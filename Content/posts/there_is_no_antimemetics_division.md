@@ -1,0 +1,22 @@
+---
+title: There is no antimemetics division
+date: 2026-06-14 23:03
+categories: life
+---
+
+# There is no antimemetics division
+
+This year is turning out to be a heavy one. Not for any particular reason of hard times or deep topics, just the slow grind of too much sliding its way into my limited time and energy. The responsibilities have climbed, but my shoulders a bit fucked right now due to pointlessly falling over in a car park while carrying my daughter to A&E, so I've not been able to pull myself up to meet those responsibilities.
+
+Jokes aside, however poor, I've realised that I've just been all over the place. I've consistently been working on personal projects all year but because there's been little to no focus, nothing has really progressed. This website is at least a static site generator written in Odin, which is lovely. I also used an LLM to rewrite Swell in Odin, then spent weeks unfucking the mess it had made of the memory allocations, which was a taxing but hugely rewarding experience. But the main project which is actually starting to look more like it could go somewhere, and was supposed to be my focus for the year, has sat idle by the wayside, waiting for me to actually dedicate the time to it.
+
+I started this post two months ago and just never came back to it. At the time my frustration is palpable. I was carrying a lot, dealing with a lot and not getting a lot done. I have managed to reduce that down now. Becoming more focused on what's important, achieving more, and just generally finding my way through a time that was extremely tough.
+
+I got back to journaling, which is still very hit and miss but in general reduces my distractions quite heavily and helps me to hone in on what makes the most sense. I also accquired some new gismos and gadgets which have done mostly nothing compared to just the ipod and a simple miyoo mini. I reduced my LLM usage drastically, and intend to stop completely as I find it to be a more addictive and less thought intense path to an answer I'd gain more benefit getting to on my own.
+
+I read a great book, its the title of this post, go read it if you're into horror.
+
+I became an open source contributor...which is probably the biggest news, but I want to save the details for another post. Essentially I made some minor contributions to the Odin programming language compiler to get Playdate targets working, including the addition of a arm32 subtarget for the playdate which is new and pretty damn exciting.
+
+Anyways, life goes on, all is mostly well. My health could do with some prayers, but in general all is well.
+
