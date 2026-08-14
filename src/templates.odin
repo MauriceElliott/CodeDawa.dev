@@ -4,6 +4,16 @@ import "core:fmt"
 import "core:strings"
 
 // Render the <head>, opening <body>, and <header> section
+Link :: struct {
+	label, url: string,
+}
+
+links := []Link {
+	{"Github", "https://github.com/MauriceElliott"},
+	{"Tangled", "https://tangled.org/codedawa.dev"},
+	{"Lexaloffle", "https://www.lexaloffle.com/bbs/?uid=84997"},
+}
+
 render_head :: proc(b: ^strings.Builder, page_title: string) {
 	strings.write_string(
 		b,
@@ -81,8 +91,16 @@ render_home :: proc(articles: []Article) -> string {
 
   <section class="links">
     <p><strong>Links:</strong></p>
-    <a href="https://github.com/MauriceElliott">Github</a>
-  </section>
+`,
+	)
+
+	for l in links {
+		fmt.sbprintf(&b, "    <a href=\"%s\">%s</a><br>\n", l.url, l.label)
+	}
+
+	strings.write_string(
+		&b,
+		`  </section>
 
   <section class="musings">
     <p><strong>Posts:</strong></p>
