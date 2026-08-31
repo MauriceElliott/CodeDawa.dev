@@ -109,6 +109,7 @@ render_home :: proc(articles: []Article) -> string {
 	)
 
 	for &a in articles {
+		if !strings.has_prefix(a.url, "/posts/") do continue
 		df := date_formatted(a.date)
 		defer delete(df)
 		fmt.sbprintf(
