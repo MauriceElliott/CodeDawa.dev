@@ -9,6 +9,7 @@ Link :: struct {
 }
 
 links := []Link {
+	{"Introduction", "/introduction"},
 	{"Github", "https://github.com/MauriceElliott"},
 	{"Codeberg", "https://codeberg.org/MauriceElliott"},
 	{"Lexaloffle", "https://www.lexaloffle.com/bbs/?uid=84997"},
