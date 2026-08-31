@@ -16,8 +16,7 @@ generate_rss :: proc(articles: []Article) -> string {
 	strings.write_string(&b, `</link>
     <description>`)
 	strings.write_string(&b, SITE_DESCRIPTION)
-	strings.write_string(&b, `</description>
-`)
+	strings.write_string(&b, `</description>`)
 
 	for &a in articles {
 		link := strings.concatenate({SITE_URL, a.url})

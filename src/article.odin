@@ -223,7 +223,7 @@ parse_article :: proc(rel_path: string) -> (article: Article, ok: bool) {
 
 load_articles :: proc() -> (articles: [dynamic]Article, ok: bool) {
 	articles = make([dynamic]Article)
-	_walk_content("Content", &articles) or_return
+	_walk_content("Content/posts", &articles) or_return
 	ok = true
 	return
 }
