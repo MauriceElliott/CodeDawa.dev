@@ -10,7 +10,7 @@ Link :: struct {
 
 links := []Link {
 	{"Github", "https://github.com/MauriceElliott"},
-	{"Tangled", "https://tangled.org/codedawa.dev"},
+	{"Codeberg", "https://codeberg.org/MauriceElliott"},
 	{"Lexaloffle", "https://www.lexaloffle.com/bbs/?uid=84997"},
 }
 
@@ -86,7 +86,7 @@ render_home :: proc(articles: []Article) -> string {
     better after posting here, it has done its job.<br>
     <strong>Dawa</strong> is arabic for medicine, or <strong>cure</strong>. My implication
     with that is I found the cure to my addictions through code. Although saying that, it
-    was definitely more my son being in the world that cured me.
+    was definitely from becoming a father.
   </p>
 
   <section class="links">
