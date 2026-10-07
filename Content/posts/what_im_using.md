@@ -1,7 +1,7 @@
 ---
 title: My "tech" stack
 date: 2026-01-25 20:13
-categories: favourite_tech
+categories: tech
 ---
 I love these posts, stumbling onto someone I admire's personal blog and finding a list of the tech they use is nice. It pointlessly interests me. It's useless guff that might make me feel a way or might make me feel nothing, but there's a joy in just the basics of seeing through someone else's experience via the way they choose to work.
 
