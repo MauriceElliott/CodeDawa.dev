@@ -34,7 +34,6 @@ So that's what I've done. [PiCal](https://github.com/MauriceElliott/PiCal), name
 
 It is designed for me, to get my work done the best way I know how, to teach and support me while I do it, and to be my force multiplier so I can one day become a **cracked engineer**.
 
-#### P.S. A few interesting links and extra bits.
+#### P.S. These books heavily inspire the way I live and work
 - Book: [Cal Newport - Deep Work](https://calnewport.com/deep-work-rules-for-focused-success-in-a-distracted-world/)
 - Book: [Cal Newport - Digital Minimalism](https://calnewport.com/my-new-book-digital-minimalism/)
-- Article: [Dan Cohen - The Slow Formation of Durable Software](https://newsletter.dancohen.org/archive/the-slow-formation-of-durable-software/)
