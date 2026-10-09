@@ -20,7 +20,7 @@ So after many days of soul searching, going through the five stages of grief on 
 
 So that's what I've done. [PiCal](https://github.com/MauriceElliott/PiCal), named after the wonderful Cal Newport for his brilliant philosophy of Digital Minimalism, the act of making tech support your values, is a [Pi Coding Agent](https://pi.dev) configuration that aims to work as a TA. I'll be regularly updating it to support my workflow, and am sure I will be able to find new and novel ways to support an assistant-based workflow even better.
 
-## Here's a little excerpt from the SYSTEM.md file:
+##### Here's a little excerpt from the SYSTEM.md file:
 ```markdown
 - You will not make code changes
 - You will not make plans
