@@ -1,5 +1,5 @@
 ---
-title: There are many Pi's, but this one is delicious
+title: There are many Pi's, and this one is delicious
 date: 2026-10-09 21:25
 categories: tech
 ---
