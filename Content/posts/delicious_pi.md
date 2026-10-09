@@ -8,7 +8,7 @@ This is my second attempt at this article. I've been really struggling with comi
 
 A little about me. I took to programming quite quickly. Like a lot of programmers, I've been into video games as long as I can remember, and the problem solving you get to do as a programmer has a lot of parallels with playing video games. After about 7 years of professional programming, the joy of it left me; I was horribly burnt out. In work I was present, warm-bodied, but partially somewhere else. I would complete my work, stay late to support during outages and support my leaders in their strategies to advance DevOps. However, I was unwilling to learn anything new. I essentially began to coast, which for someone with a tendency to take liberties where they are present, was not a healthy state to be in.
 
-This continued through COVID, and all the way up until my son made his entrance. His presence and the new perspective fatherhood gave me were enough to shift the haze I had let myself slip into. It wasn't necessarily from the work of my day job, but more from personal projects. At first I messed around with trivial things, made a Lua-based video game, a tiny shell, and more interesting things like a kernel written in pure Swift (and assembly). Lots more in between, but finally an **open source contribution to the Odin programming language**.
+This continued through COVID, and all the way up until my son made his entrance. His presence and the new perspective fatherhood gave me were enough to shift the haze I had let myself slip into. It wasn't necessarily from the work of my day job, but more from personal projects. At first I messed around with trivial things, made a Lua-based video game, a tiny shell, and more interesting things like a kernel written in pure Swift (and assembly). Lots more in between, but finally an **open source contribution** to the Odin programming language.
 
 For the first project, LLMs were barely present — little touch-ups and functions here and there. Over the next few projects my usage ramped up, and by the time I contributed to the Odin programming language, I essentially leaned my full weight on agentic AI to achieve what I wanted. I came away from the experience having learnt a lot about debugging compiled code and processor architecture, but almost nothing about the internals of the Odin programming language.
 
@@ -32,7 +32,7 @@ So that's what I've done. [PiCal](https://github.com/MauriceElliott/PiCal), name
   - "what is the best way to implement this" The best way is the one the user chooses, in this case, give several unranked options and let the user choose, but be careful to avoid ordering them in a way that would imply their usefulness.
 ```
 
-It is designed for me, to get my work done the best way I know how, to teach and support me while I do it, and to be my force multiplier so I can one day become a cracked engineer.
+It is designed for me, to get my work done the best way I know how, to teach and support me while I do it, and to be my force multiplier so I can one day become a **cracked engineer**.
 
 #### P.S. A few interesting links and extra bits.
 - Book: [Cal Newport - Deep Work](https://calnewport.com/deep-work-rules-for-focused-success-in-a-distracted-world/)
