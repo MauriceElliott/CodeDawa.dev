@@ -1,6 +1,6 @@
 ---
 title: There are many Pi configurations, but this one is delicious.
-date: 2026-04-06 00:05
+date: 2026-10-09 21:25
 categories: tech
 ---
 
