@@ -4,7 +4,7 @@ date: 2026-10-09 21:25
 categories: tech
 ---
 
-This is my second attempt at this article. I've been really struggling with coming to terms with the changes in our industry and have spent the last few weeks in and out of a mild depression over the possible loss of my enjoyment of programming. Something changed a few days ago, though. I realised that not only do **I have agency**, but AI is a brilliant tool to support my values in the way I want them to be supported.
+I've been really struggling with coming to terms with the changes in our industry and have spent the last few weeks in and out of a mild depression over the possible loss of my enjoyment of programming. Something changed a few days ago, though. I realised that not only do **I have agency**, but AI is a brilliant tool to support my values in the way I want them to be supported.
 
 A little about me. I took to programming quite quickly. Like a lot of programmers, I've been into video games as long as I can remember, and the problem solving you get to do as a programmer has a lot of parallels with playing video games. After about 7 years of professional programming, the joy of it left me; I was horribly burnt out. In work I was present, warm-bodied, but partially somewhere else. I would complete my work, stay late to support during outages and support my leaders in their strategies to advance DevOps. However, I was unwilling to learn anything new. I essentially began to coast, which for someone with a tendency to take liberties where they are present, was not a healthy state to be in.
 
@@ -35,5 +35,8 @@ So that's what I've done. [PiCal](https://github.com/MauriceElliott/PiCal), name
 It is designed for me, to get my work done the best way I know how, to teach and support me while I do it, and to be my force multiplier so I can one day become a **cracked engineer**.
 
 #### P.S. These books heavily inspire the way I live and work
-- Book: [Cal Newport - Deep Work](https://calnewport.com/deep-work-rules-for-focused-success-in-a-distracted-world/)
-- Book: [Cal Newport - Digital Minimalism](https://calnewport.com/my-new-book-digital-minimalism/)
+- [Cal Newport - Deep Work](https://calnewport.com/deep-work-rules-for-focused-success-in-a-distracted-world/)
+- [Cal Newport - Digital Minimalism](https://calnewport.com/my-new-book-digital-minimalism/)
+- [David Thomas, Andrew Hunt - The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
+- [John Romero - Doom Guy](https://romero.com/shop/p/doomguy)
+
